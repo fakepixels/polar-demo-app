@@ -351,3 +351,10 @@ Potential classes:  111
 JIT TOTAL: 6.572ms
  ✓ Compiled in 19ms
  GET / 200 in 90ms
+Finding changed files: 1.375ms
+Reading changed files: 0.532ms
+Sorting candidates: 0.023ms
+Generate rules: 0.293ms
+Build stylesheet: 0.004ms
+Potential classes:  76
+JIT TOTAL: 8.453ms

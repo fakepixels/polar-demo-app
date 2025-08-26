@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@polar-sh/sdk": "^0.34.13",
     "geist": "^1.4.2",
     "next": "15.1.0",
     "react": "19.0.0",
