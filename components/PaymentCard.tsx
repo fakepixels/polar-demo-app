@@ -18,16 +18,16 @@ export default function PaymentCard({ tier }: PaymentCardProps) {
   };
 
   return (
-    <div className="border border-white/20 p-4 sm:p-6 hover:border-white/40 transition-colors cursor-pointer group">
-      <div className="space-y-4">
-        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start space-y-2 sm:space-y-0">
+    <div className="border border-white/20 p-4 sm:p-6 hover:border-white/40 transition-colors cursor-pointer group h-full">
+      <div className="flex flex-col h-full">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start space-y-2 sm:space-y-0 flex-grow">
           <div className="space-y-1">
             <h3 className="text-base sm:text-lg font-semibold">{tier.name}</h3>
             <p className="text-xs sm:text-sm opacity-70">{tier.description}</p>
           </div>
           {tier.priceDisplay && (
             <div className="text-left sm:text-right">
-              <span className="text-xl sm:text-2xl font-bold">
+              <span className="text-sm sm:text-base font-medium opacity-80">
                 {tier.priceDisplay}
               </span>
             </div>
@@ -37,7 +37,7 @@ export default function PaymentCard({ tier }: PaymentCardProps) {
         <button
           onClick={handlePayment}
           disabled={isLoading}
-          className="w-full bg-white text-black py-2 sm:py-3 text-sm sm:text-base font-semibold hover:bg-white/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-white text-black py-2 sm:py-3 text-sm sm:text-base font-semibold hover:bg-white/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed mt-4"
         >
           {isLoading ? 'Processing...' : 'Support'}
         </button>
