@@ -1,0 +1,353 @@
+
+> fakepixels-payment-app@0.1.0 dev
+> next dev --turbo
+
+   ▲ Next.js 15.1.0 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.168:3000
+   - Environments: .env.local
+   - Experiments (use with caution):
+     · turbo
+
+ ✓ Starting...
+Creating turbopack project {
+  dir: '/Users/tinahe/conductor/polar-demo-app/.conductor/fakepixels-san-marino',
+  testMode: true
+}
+ ✓ Ready in 664ms
+ ○ Compiling / ...
+
+
+Source path: ./node_modules/geist/dist/geistmono_8e2790ea.module.css
+Setting up new context...
+JIT TOTAL: 56.352ms
+
+
+Source path: ./app/globals.css
+Finding changed files: 2.663ms
+Reading changed files: 2.614ms
+Sorting candidates: 0.131ms
+Generate rules: 7.766ms
+Build stylesheet: 1.107ms
+Potential classes:  419
+Active contexts:  2
+JIT TOTAL: 34.462ms
+
+
+JIT TOTAL: 0.393ms
+ ✓ Compiled / in 1135ms
+ GET / 200 in 1267ms
+ ○ Compiling /api/create-checkout ...
+ ✓ Compiled /api/create-checkout in 1110ms
+Checkout creation failed: Error [SDKValidationError]: Input validation failed: [
+  {
+    "code": "invalid_type",
+    "expected": "array",
+    "received": "undefined",
+    "path": [
+      "products"
+    ],
+    "message": "Required"
+  }
+]
+    at POST (app/api/create-checkout/route.ts:9:50)
+   7 |
+   8 |     // Create a checkout session with Polar.sh
+>  9 |     const checkoutSession = await polar.checkouts.create({
+     |                                                  ^
+  10 |       // Use your organization ID
+  11 |       organizationId: ORGANIZATION_ID,
+  12 |       // Set success URL with session parameter {
+  rawValue: [Object],
+  rawMessage: 'Input validation failed',
+  [cause]: Error [ZodError]: [
+    {
+      "code": "invalid_type",
+      "expected": "array",
+      "received": "undefined",
+      "path": [
+        "products"
+      ],
+      "message": "Required"
+    }
+  ]
+      at POST (app/api/create-checkout/route.ts:9:50)
+     7 |
+     8 |     // Create a checkout session with Polar.sh
+  >  9 |     const checkoutSession = await polar.checkouts.create({
+       |                                                  ^
+    10 |       // Use your organization ID
+    11 |       organizationId: ORGANIZATION_ID,
+    12 |       // Set success URL with session parameter {
+    issues: [ [Object] ],
+    addIssue: [Function (anonymous)],
+    addIssues: [Function (anonymous)]
+  }
+}
+ ⨯ ReferenceError: amount is not defined
+    at POST (app/api/create-checkout/route.ts:33:68)
+  31 |     
+  32 |     // Fallback to mock URL if Polar.sh fails
+> 33 |     const fallbackCheckoutUrl = `https://polar.sh/checkout?amount=${amount}&currency=${currency}&tier=${tierId}`;
+     |                                                                    ^
+  34 |     
+  35 |     return NextResponse.json({ 
+  36 |       checkoutUrl: fallbackCheckoutUrl,
+ ⨯ ReferenceError: amount is not defined
+    at POST (app/api/create-checkout/route.ts:33:68)
+  31 |     
+  32 |     // Fallback to mock URL if Polar.sh fails
+> 33 |     const fallbackCheckoutUrl = `https://polar.sh/checkout?amount=${amount}&currency=${currency}&tier=${tierId}`;
+     |                                                                    ^
+  34 |     
+  35 |     return NextResponse.json({ 
+  36 |       checkoutUrl: fallbackCheckoutUrl,
+ POST /api/create-checkout 500 in 1362ms
+Checkout creation failed: Error [SDKValidationError]: Input validation failed: [
+  {
+    "code": "invalid_type",
+    "expected": "array",
+    "received": "undefined",
+    "path": [
+      "products"
+    ],
+    "message": "Required"
+  }
+]
+    at POST (app/api/create-checkout/route.ts:9:50)
+   7 |
+   8 |     // Create a checkout session with Polar.sh
+>  9 |     const checkoutSession = await polar.checkouts.create({
+     |                                                  ^
+  10 |       // Use your organization ID
+  11 |       organizationId: ORGANIZATION_ID,
+  12 |       // Set success URL with session parameter {
+  rawValue: [Object],
+  rawMessage: 'Input validation failed',
+  [cause]: Error [ZodError]: [
+    {
+      "code": "invalid_type",
+      "expected": "array",
+      "received": "undefined",
+      "path": [
+        "products"
+      ],
+      "message": "Required"
+    }
+  ]
+      at POST (app/api/create-checkout/route.ts:9:50)
+     7 |
+     8 |     // Create a checkout session with Polar.sh
+  >  9 |     const checkoutSession = await polar.checkouts.create({
+       |                                                  ^
+    10 |       // Use your organization ID
+    11 |       organizationId: ORGANIZATION_ID,
+    12 |       // Set success URL with session parameter {
+    issues: [ [Object] ],
+    addIssue: [Function (anonymous)],
+    addIssues: [Function (anonymous)]
+  }
+}
+ ⨯ ReferenceError: amount is not defined
+    at POST (app/api/create-checkout/route.ts:33:68)
+  31 |     
+  32 |     // Fallback to mock URL if Polar.sh fails
+> 33 |     const fallbackCheckoutUrl = `https://polar.sh/checkout?amount=${amount}&currency=${currency}&tier=${tierId}`;
+     |                                                                    ^
+  34 |     
+  35 |     return NextResponse.json({ 
+  36 |       checkoutUrl: fallbackCheckoutUrl,
+ ⨯ ReferenceError: amount is not defined
+    at POST (app/api/create-checkout/route.ts:33:68)
+  31 |     
+  32 |     // Fallback to mock URL if Polar.sh fails
+> 33 |     const fallbackCheckoutUrl = `https://polar.sh/checkout?amount=${amount}&currency=${currency}&tier=${tierId}`;
+     |                                                                    ^
+  34 |     
+  35 |     return NextResponse.json({ 
+  36 |       checkoutUrl: fallbackCheckoutUrl,
+ POST /api/create-checkout 500 in 99ms
+Checkout creation failed: Error [SDKValidationError]: Input validation failed: [
+  {
+    "code": "invalid_type",
+    "expected": "array",
+    "received": "undefined",
+    "path": [
+      "products"
+    ],
+    "message": "Required"
+  }
+]
+    at POST (app/api/create-checkout/route.ts:9:50)
+   7 |
+   8 |     // Create a checkout session with Polar.sh
+>  9 |     const checkoutSession = await polar.checkouts.create({
+     |                                                  ^
+  10 |       // Use your organization ID
+  11 |       organizationId: ORGANIZATION_ID,
+  12 |       // Set success URL with session parameter {
+  rawValue: [Object],
+  rawMessage: 'Input validation failed',
+  [cause]: Error [ZodError]: [
+    {
+      "code": "invalid_type",
+      "expected": "array",
+      "received": "undefined",
+      "path": [
+        "products"
+      ],
+      "message": "Required"
+    }
+  ]
+      at POST (app/api/create-checkout/route.ts:9:50)
+     7 |
+     8 |     // Create a checkout session with Polar.sh
+  >  9 |     const checkoutSession = await polar.checkouts.create({
+       |                                                  ^
+    10 |       // Use your organization ID
+    11 |       organizationId: ORGANIZATION_ID,
+    12 |       // Set success URL with session parameter {
+    issues: [ [Object] ],
+    addIssue: [Function (anonymous)],
+    addIssues: [Function (anonymous)]
+  }
+}
+ ⨯ ReferenceError: amount is not defined
+    at POST (app/api/create-checkout/route.ts:33:68)
+  31 |     
+  32 |     // Fallback to mock URL if Polar.sh fails
+> 33 |     const fallbackCheckoutUrl = `https://polar.sh/checkout?amount=${amount}&currency=${currency}&tier=${tierId}`;
+     |                                                                    ^
+  34 |     
+  35 |     return NextResponse.json({ 
+  36 |       checkoutUrl: fallbackCheckoutUrl,
+ ⨯ ReferenceError: amount is not defined
+    at POST (app/api/create-checkout/route.ts:33:68)
+  31 |     
+  32 |     // Fallback to mock URL if Polar.sh fails
+> 33 |     const fallbackCheckoutUrl = `https://polar.sh/checkout?amount=${amount}&currency=${currency}&tier=${tierId}`;
+     |                                                                    ^
+  34 |     
+  35 |     return NextResponse.json({ 
+  36 |       checkoutUrl: fallbackCheckoutUrl,
+ POST /api/create-checkout 500 in 137ms
+Finding changed files: 1.708ms
+Reading changed files: 1.036ms
+Sorting candidates: 0.042ms
+Generate rules: 0.675ms
+Build stylesheet: 0.019ms
+Potential classes:  120
+JIT TOTAL: 10.753ms
+Checkout creation failed: Error [SDKValidationError]: Input validation failed: [
+  {
+    "code": "invalid_type",
+    "expected": "array",
+    "received": "undefined",
+    "path": [
+      "products"
+    ],
+    "message": "Required"
+  }
+]
+    at POST (app/api/create-checkout/route.ts:16:50)
+  14 |
+  15 |     // Create a checkout session with Polar.sh
+> 16 |     const checkoutSession = await polar.checkouts.create({
+     |                                                  ^
+  17 |       // Use your organization ID
+  18 |       organizationId: ORGANIZATION_ID,
+  19 |       // Set success URL with session parameter {
+  rawValue: [Object],
+  rawMessage: 'Input validation failed',
+  [cause]: Error [ZodError]: [
+    {
+      "code": "invalid_type",
+      "expected": "array",
+      "received": "undefined",
+      "path": [
+        "products"
+      ],
+      "message": "Required"
+    }
+  ]
+      at POST (app/api/create-checkout/route.ts:16:50)
+    14 |
+    15 |     // Create a checkout session with Polar.sh
+  > 16 |     const checkoutSession = await polar.checkouts.create({
+       |                                                  ^
+    17 |       // Use your organization ID
+    18 |       organizationId: ORGANIZATION_ID,
+    19 |       // Set success URL with session parameter {
+    issues: [ [Object] ],
+    addIssue: [Function (anonymous)],
+    addIssues: [Function (anonymous)]
+  }
+}
+ POST /api/create-checkout 200 in 207ms
+ GET / 200 in 30ms
+ GET / 200 in 51ms
+ ✓ Compiled in 34ms
+Finding changed files: 2.087ms
+Reading changed files: 1.526ms
+Sorting candidates: 0.061ms
+Generate rules: 0.513ms
+Build stylesheet: 0.007ms
+Potential classes:  104
+JIT TOTAL: 11.338ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 56ms
+ ⨯ TypeError: Cannot read properties of undefined (reading 'toFixed')
+    at PaymentCard (components/PaymentCard.tsx:30:28)
+  28 |           <div className="text-left sm:text-right">
+  29 |             <span className="text-xl sm:text-2xl font-bold">
+> 30 |               ${tier.amount.toFixed(0)}
+     |                            ^
+  31 |             </span>
+  32 |           </div>
+  33 |         </div> {
+  digest: '3034527732'
+}
+ GET / 500 in 150ms
+Finding changed files: 0.938ms
+Reading changed files: 0.783ms
+Sorting candidates: 0.032ms
+Generate rules: 0.166ms
+Build stylesheet: 0.003ms
+Potential classes:  106
+JIT TOTAL: 8.279ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 21ms
+ GET / 200 in 100ms
+Finding changed files: 1.296ms
+Reading changed files: 0.436ms
+Sorting candidates: 0.029ms
+Generate rules: 0.149ms
+Build stylesheet: 0.002ms
+Potential classes:  103
+JIT TOTAL: 5.453ms
+ ✓ Compiled in 17ms
+ GET / 200 in 147ms
+ GET / 200 in 26ms
+Finding changed files: 1.005ms
+Reading changed files: 0.758ms
+Sorting candidates: 0.034ms
+Generate rules: 0.187ms
+Build stylesheet: 0.005ms
+Potential classes:  107
+JIT TOTAL: 7.403ms
+ ✓ Compiled in 21ms
+ GET / 200 in 139ms
+ GET / 200 in 23ms
+Finding changed files: 0.671ms
+Reading changed files: 0.43ms
+Sorting candidates: 0.027ms
+Generate rules: 0.204ms
+JIT TOTAL: 3.978ms
+ ✓ Compiled in 19ms
+Finding changed files: 0.978ms
+Reading changed files: 0.638ms
+Generate rules: 0.253ms
+Potential classes:  111
+JIT TOTAL: 6.572ms
+ ✓ Compiled in 19ms
+ GET / 200 in 90ms
