@@ -358,3 +358,30 @@ Generate rules: 0.293ms
 Build stylesheet: 0.004ms
 Potential classes:  76
 JIT TOTAL: 8.453ms
+[1m[31mFATAL[39m[0m: An unexpected Turbopack error occurred. Please report the content of /var/folders/ms/tc2wlg352239sqhpzj9wfsc80000gn/T/next-panic-65e4dc3dc7ea16a0b439545301c4b7d3.log, along with a description of what you were doing when the error occurred, to https://github.com/vercel/next.js/issues/new
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1251ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.1.0 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.168:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+Creating turbopack project {
+  dir: '/Users/tinahe/conductor/polar-demo-app/.conductor/fakepixels-san-marino',
+  testMode: true
+}
+ ✓ Ready in 797ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.1.0 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.168:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+Creating turbopack project {
+  dir: '/Users/tinahe/conductor/polar-demo-app/.conductor/fakepixels-san-marino',
+  testMode: true
+}
+ ✓ Ready in 534ms
