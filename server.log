@@ -386,3 +386,110 @@ Creating turbopack project {
 }
  ✓ Ready in 534ms
    skipping / (conflict)
+ ○ Compiling / ...
+
+
+Source path: ./node_modules/geist/dist/geistmono_8e2790ea.module.css
+Setting up new context...
+JIT TOTAL: 56.063ms
+
+
+JIT TOTAL: 0.374ms
+Source path: ./app/globals.css
+Finding changed files: 2.663ms
+Reading changed files: 2.564ms
+Sorting candidates: 0.131ms
+Generate rules: 8.513ms
+Build stylesheet: 0.466ms
+Potential classes:  380
+Active contexts:  2
+JIT TOTAL: 33.459ms
+
+
+ ✓ Compiled / in 1269ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/tinahe/conductor/polar-demo-app/.conductor/fakepixels-san-marino/.next/static/development/_buildManifest.js.tmp.cf61y1nkpqi'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/tinahe/conductor/polar-demo-app/.conductor/fakepixels-san-marino/.next/static/development/_buildManifest.js.tmp.cf61y1nkpqi'
+}
+ ✓ Compiled /_error in 452ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/Users/tinahe/conductor/polar-demo-app/.conductor/fakepixels-san-marino/.next/static/development/_buildManifest.js.tmp.e7t4jwulfpj'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/tinahe/conductor/polar-demo-app/.conductor/fakepixels-san-marino/.next/static/development/_buildManifest.js.tmp.e7t4jwulfpj'
+}
+
+
+Source path: ./node_modules/geist/dist/geistmono_8e2790ea.module.css
+Setting up new context...
+JIT TOTAL: 59.246ms
+
+
+Source path: ./app/globals.css
+Finding changed files: 2.272ms
+Reading changed files: 2.989ms
+Sorting candidates: 0.135ms
+Generate rules: 8.149ms
+Build stylesheet: 0.497ms
+Potential classes:  380
+Active contexts:  2
+JIT TOTAL: 33.084ms
+
+
+JIT TOTAL: 0.293ms
+JIT TOTAL: 0.203ms
+Finding changed files: 0.57ms
+Reading changed files: 0.005ms
+Sorting candidates: 0.003ms
+Generate rules: 0.075ms
+Build stylesheet: 0.002ms
+Potential classes:  1
+Active contexts:  2
+JIT TOTAL: 2.978ms
+JIT TOTAL: 0.292ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.1.0 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.168:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ⚠ Invalid next.config.ts options detected: 
+ ⚠     Unrecognized key(s) in object: 'appDir' at "experimental"
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+Creating turbopack project {
+  dir: '/Users/tinahe/conductor/polar-demo-app/.conductor/fakepixels-san-marino',
+  testMode: true
+}
+ ✓ Ready in 700ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.1.0 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.168:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ⚠ Invalid next.config.ts options detected: 
+ ⚠     Unrecognized key(s) in object: 'swcMinify'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+Creating turbopack project {
+  dir: '/Users/tinahe/conductor/polar-demo-app/.conductor/fakepixels-san-marino',
+  testMode: true
+}
+ ✓ Ready in 596ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.1.0 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.168:3000
+   - Environments: .env.local
+   - Experiments (use with caution):
+     · optimizeCss
+
+ ✓ Starting...
+Creating turbopack project {
+  dir: '/Users/tinahe/conductor/polar-demo-app/.conductor/fakepixels-san-marino',
+  testMode: true
+}
+ ✓ Ready in 632ms

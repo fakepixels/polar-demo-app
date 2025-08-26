@@ -25,10 +25,10 @@ export default function PaymentCard({ tier }: PaymentCardProps) {
             <h3 className="text-base sm:text-lg font-semibold">{tier.name}</h3>
             <p className="text-xs sm:text-sm opacity-70">{tier.description}</p>
           </div>
-          {tier.amount && (
+          {tier.priceDisplay && (
             <div className="text-left sm:text-right">
               <span className="text-xl sm:text-2xl font-bold">
-                ${tier.amount.toFixed(0)}
+                {tier.priceDisplay}
               </span>
             </div>
           )}

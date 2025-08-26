@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { GeistMono } from 'geist/font/mono';
 import './globals.css';
+import './styles.css';
 
 export const metadata: Metadata = {
   title: 'Fakepixels - Support',
