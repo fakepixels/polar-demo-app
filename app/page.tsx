@@ -5,34 +5,34 @@ import PaymentCard from '@/components/PaymentCard';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-6">
-      <div className="max-w-2xl w-full space-y-8">
+    <main style={{minHeight: '100vh', backgroundColor: '#000000', color: '#ffffff', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '24px'}}>
+      <div style={{maxWidth: '800px', width: '100%'}}>
         {/* Header */}
-        <div className="text-center space-y-4">
-          <h1 className="text-4xl md:text-6xl font-mono font-bold tracking-tight">
+        <div style={{textAlign: 'center', marginBottom: '48px'}}>
+          <h1 style={{fontSize: '3rem', fontWeight: 'bold', marginBottom: '16px', fontFamily: 'var(--font-geist-mono), SF Mono, Monaco, monospace'}}>
             FAKEPIXELS
           </h1>
-          <p className="text-lg md:text-xl opacity-80 max-w-lg mx-auto leading-relaxed">
-            Support my <a href="https://fakepixels.substack.com/" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-80 transition-opacity">blog</a> and help me continue creating writings on philosophy, technology, and markets.
+          <p style={{fontSize: '1.125rem', opacity: '0.8', maxWidth: '500px', margin: '0 auto', lineHeight: '1.6'}}>
+            Support my <a href="https://fakepixels.substack.com/" target="_blank" rel="noopener noreferrer" style={{textDecoration: 'underline', color: 'inherit'}}>blog</a> and help me continue creating writings on philosophy, technology, and markets.
           </p>
         </div>
 
         {/* Payment Options */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12 items-stretch">
+        <div style={{display: 'grid', gridTemplateColumns: '1fr', gap: '16px', marginBottom: '48px'}}>
           {PAYMENT_TIERS.map((tier) => (
             <PaymentCard key={tier.id} tier={tier} />
           ))}
         </div>
 
         {/* Footer */}
-        <div className="text-center pt-8 border-t border-white/20">
-          <p className="text-sm opacity-60">
+        <div style={{textAlign: 'center', paddingTop: '32px', borderTop: '1px solid rgba(255, 255, 255, 0.2)'}}>
+          <p style={{fontSize: '0.875rem', opacity: '0.6'}}>
             Powered by{' '}
             <a 
               href="https://polar.sh" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="underline hover:opacity-80 transition-opacity"
+              style={{textDecoration: 'underline', color: 'inherit'}}
             >
               Polar
             </a>
