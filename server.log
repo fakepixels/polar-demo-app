@@ -493,3 +493,15 @@ Creating turbopack project {
   testMode: true
 }
  ✓ Ready in 632ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+   ▲ Next.js 15.1.0 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.1.168:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+Creating turbopack project {
+  dir: '/Users/tinahe/conductor/polar-demo-app/.conductor/fakepixels-san-marino',
+  testMode: true
+}
+ ✓ Ready in 518ms

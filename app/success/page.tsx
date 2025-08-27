@@ -6,7 +6,7 @@ import { useEffect, useState, Suspense } from 'react';
 function SuccessContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
-  const sessionId = searchParams.get('session_id');
+  const sessionId = searchParams?.get('session_id');
   const [isVerifying, setIsVerifying] = useState(true);
 
   useEffect(() => {
